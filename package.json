@@ -1,0 +1,17 @@
+{
+  "name": "backend2",
+  "version": "1.0.0",
+  "description": "this is another backend",
+  "keywords": [
+    "javascript",
+    "backend",
+    "nodejs"
+  ],
+  "license": "ISC",
+  "author": "Rishabh V TRivedi",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
