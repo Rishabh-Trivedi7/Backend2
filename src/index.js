@@ -3,14 +3,19 @@ import dotenv from "dotenv"
 // import mongoose from "mongoose";
 // import { DB_NAME } from "./constants";
 import connectDB from "./db/index.js";
+import { app } from "./app.js";
 
 dotenv.config({path:'./env'})
 
 connectDB()
 .then(()=>{
 
-    app.on((err)=>{
-        console.log(`There is some error :  ${err}`); 
+    // app.on((err)=>{
+    //     console.log(`There is some error :  ${err}`); 
+    // })
+    app.on("error", (error) => {
+    console.log("ERR: ", error);
+    throw error
     })
 
 

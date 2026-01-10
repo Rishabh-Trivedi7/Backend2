@@ -24,4 +24,12 @@ app.use(express.static("public")) //pdf ke images aave to aapda server ma store 
 
 
 app.use(cookieParser()) //cookieparser thi server => user na browser ni cookies access kri ske ne set pn kri ske
+
+
+//router import
+import userRouter from './routes/user.route.js'
+
+//router declaration
+app.use("/api/v1/users",userRouter)
+
 export {app}
